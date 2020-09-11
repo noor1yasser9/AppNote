@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myNoteFragment">
+
+    <fragment
+        android:id="@+id/myNoteFragment"
+        android:name="com.nurbk.ps.noteapp.ui.fragment.MyNoteFragment"
+        android:label="MyNoteFragment" >
+        <action
+            android:id="@+id/action_myNoteFragment_to_createNoteFragment"
+            app:destination="@id/createNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNoteFragment"
+        android:name="com.nurbk.ps.noteapp.ui.fragment.CreateNoteFragment"
+        android:label="CreateNoteFragment" />
+</navigation>
